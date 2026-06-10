@@ -1,213 +1,727 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>주식투자 리서치 및 기술 인프라 저널</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --cream-bg: #FCFBF7;
-      --charcoal-fg: #1E1B18;
-      --gold-accent: #b8976f;
-      --hairline-color: #e5e2db;
-      --serif-font: 'Nanum Myeongjo', serif;
-      --sans-font: 'Outfit', sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>강남 셔츠룸 | 마포 주식투자자들의 필수 코스 - sf-t3</title>
+    <meta name="description" content="마포에서 강남 셔츠룸까지, 진짜 주식투자 고수들이 모인다. 010-6279-0862. 브로들의 전장, 지금 바로 합류하라.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 주식투자, 주식 고수, 브로 문화, 투자 커뮤니티, sf-t3">
+    <link rel="canonical" href="https://sf-t3-1779642675702-312.vercel.app/">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta property="og:title" content="강남 셔츠룸 | 마포 주식투자자들의 필수 코스">
+    <meta property="og:description" content="주식으로 돈 벌고, 셔츠룸에서 불태워라. 마포 브로들의 전장.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-312.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ff3b00' font-family='Impact' font-size='80'%3EBRO%20ZONE%3C/text%3E%3C/svg%3E">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="강남 셔츠룸 | 마포 주식투자자들의 필수 코스">
+    <meta name="twitter:description" content="주식으로 돈 벌고, 셔츠룸에서 불태워라. 마포 브로들의 전장.">
+    <meta name="twitter:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%23000'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23ff3b00' font-family='Impact' font-size='80'%3EBRO%20ZONE%3C/text%3E%3C/svg%3E">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "강남 셔츠룸 브로 커뮤니티",
+        "description": "마포 주식투자자들을 위한 강남 셔츠룸 정보 및 커뮤니티",
+        "telephone": "+82-10-6279-0862",
+        "areaServed": ["마포", "강남"],
+        "url": "https://sf-t3-1779642675702-312.vercel.app/"
     }
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: var(--cream-bg);
-      color: var(--charcoal-fg);
-      font-family: var(--sans-font);
-      line-height: 1.8;
-      padding: 0 40px;
-    }
-    .wrapper {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 80px 0;
-    }
-    header {
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 32px;
-      margin-bottom: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-    }
-    .brand {
-      font-family: var(--serif-font);
-      font-size: 1.5rem;
-      font-weight: 800;
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      letter-spacing: 0.05em;
-    }
-    nav { display: flex; gap: 32px; }
-    nav a {
-      color: var(--charcoal-fg);
-      text-decoration: none;
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      transition: color 0.3s ease;
-    }
-    nav a:hover { color: var(--gold-accent); }
-    main { padding-bottom: 80px; }
-    .kicker {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--gold-accent);
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-family: var(--serif-font);
-      font-size: 2.8rem;
-      font-weight: 700;
-      line-height: 1.3;
-      letter-spacing: -0.02em;
-      color: var(--charcoal-fg);
-      margin-bottom: 40px;
-    }
-    .story-body {
-      font-family: var(--serif-font);
-      font-size: 1.15rem;
-      color: var(--charcoal-fg);
-      font-weight: 400;
-      text-align: justify;
-      margin-bottom: 60px;
-    }
-    .story-body p { margin-bottom: 24px; text-indent: 12px; }
-    .juice-link {
-      color: var(--gold-accent);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gold-accent);
-      font-weight: 700;
-      transition: all 0.3s ease;
-    }
-    .juice-link:hover {
-      color: var(--charcoal-fg);
-      border-bottom-color: var(--charcoal-fg);
-    }
-    .editorials {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 60px;
-    }
-    .editorial-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      color: var(--gold-accent);
-      margin-bottom: 40px;
-    }
-    .editorial-flow {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-    }
-    .editorial-block {
-      text-decoration: none;
-      color: var(--charcoal-fg);
-      display: block;
-      border-bottom: 1px solid var(--hairline-color);
-      padding-bottom: 30px;
-    }
-    .editorial-block:hover h3 { color: var(--gold-accent); }
-    .editorial-block h3 {
-      font-family: var(--serif-font);
-      font-size: 1.4rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-    .editorial-block p {
-      font-size: 0.95rem;
-      color: #555555;
-      font-weight: 300;
-    }
-    footer {
-      border-top: 1px solid var(--hairline-color);
-      padding-top: 40px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.75rem;
-      letter-spacing: 0.1em;
-      color: #888888;
-    }
-    footer a { color: #888888; text-decoration: none; }
-    footer a:hover { color: var(--gold-accent); }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 16px; }
-      h1 { font-size: 2rem; }
-      .story-body { font-size: 1.05rem; }
-    }
-  </style>
+    </script>
+    <style>
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: Impact, 'Arial Black', 'Franklin Gothic Bold', system-ui, sans-serif;
+            font-weight: 400;
+            line-height: 1.1;
+            text-transform: uppercase;
+            letter-spacing: 0.02em;
+            max-width: none;
+            overflow-x: hidden;
+        }
+
+        /* TYPOGRAPHY DNA */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Impact, 'Arial Black', system-ui, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(3.5rem, 12vw, 7rem);
+            line-height: 0.9;
+            color: #ff3b00;
+            text-shadow: 4px 4px 0 #000, 6px 6px 0 rgba(255,59,0,0.3);
+            transform: rotate(-1deg) skewX(-3deg);
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            border-left: 8px solid #ff3b00;
+            padding-left: 24px;
+            margin-bottom: 48px;
+            transform: skewX(-5deg);
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 400;
+            text-transform: none;
+            font-size: 1.1rem;
+            line-height: 1.4;
+            margin-bottom: 16px;
+            color: #ccc;
+        }
+
+        a {
+            color: #ff3b00;
+            text-decoration: none;
+            border-bottom: 3px solid #ff3b00;
+            transition: all 0.1s ease;
+        }
+
+        a:hover {
+            background: #ff3b00;
+            color: #000;
+            border-bottom-color: #fff;
+        }
+
+        /* LAYOUT DNA: full bleed, asymmetric */
+        .container {
+            width: 100%;
+            max-width: none;
+            padding: 72px 72px 0;
+            margin: 0 auto;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 32px 16px 0;
+            }
+        }
+
+        .section {
+            margin-bottom: 120px;
+            position: relative;
+        }
+
+        /* BRUTALIST BORDERS & TEXTURES */
+        .brutal-border {
+            border: 4px solid #fff;
+            padding: 48px;
+            background: #111;
+            position: relative;
+        }
+
+        .brutal-border::before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            left: -8px;
+            right: 8px;
+            bottom: 8px;
+            border: 2px solid #ff3b00;
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        .brutal-border-accent {
+            border: 4px solid #ff3b00;
+            padding: 48px;
+            background: #000;
+            position: relative;
+            box-shadow: 8px 8px 0 #ff3b00;
+        }
+
+        /* HAMBURGER MENU */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: 3px solid #ff3b00;
+            color: #fff;
+            font-size: 2.5rem;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-family: Impact, sans-serif;
+            text-transform: uppercase;
+            position: fixed;
+            top: 24px;
+            right: 24px;
+            z-index: 9999;
+            background: #000;
+        }
+
+        .nav-toggle:hover {
+            background: #ff3b00;
+            color: #000;
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+        }
+
+        /* HEADER / NAV */
+        header {
+            padding: 24px 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #ff3b00;
+            background: #000;
+            position: relative;
+            z-index: 1000;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 16px;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 16px;
+            }
+        }
+
+        .logo {
+            font-size: 2.8rem;
+            color: #fff;
+            letter-spacing: -0.05em;
+            text-shadow: 3px 3px 0 #ff3b00;
+            transform: rotate(-2deg);
+            display: inline-block;
+        }
+
+        .logo span {
+            color: #ff3b00;
+        }
+
+        nav {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                gap: 16px;
+                padding: 24px 0;
+                border-top: 3px solid #ff3b00;
+                margin-top: 8px;
+            }
+
+            nav.active {
+                display: flex;
+            }
+        }
+
+        nav a {
+            font-size: 1.4rem;
+            color: #fff;
+            border: none;
+            padding: 4px 0;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        nav a::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 3px;
+            background: #ff3b00;
+            transform: scaleX(0);
+            transition: transform 0.2s;
+        }
+
+        nav a:hover::after {
+            transform: scaleX(1);
+        }
+
+        nav a:hover {
+            background: none;
+            color: #ff3b00;
+            border: none;
+        }
+
+        /* HERO */
+        .hero {
+            padding: 72px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+            min-height: 80vh;
+            background: linear-gradient(135deg, #000 0%, #1a0000 100%);
+            border-bottom: 4px solid #ff3b00;
+            position: relative;
+        }
+
+        .hero::after {
+            content: '🔥';
+            position: absolute;
+            bottom: 24px;
+            right: 72px;
+            font-size: 6rem;
+            opacity: 0.3;
+            transform: rotate(10deg);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 32px 16px;
+                min-height: 60vh;
+            }
+
+            .hero::after {
+                right: 16px;
+                font-size: 4rem;
+            }
+        }
+
+        .hero-text {
+            z-index: 2;
+        }
+
+        .hero-text p {
+            font-size: 1.3rem;
+            color: #aaa;
+            border-left: 4px solid #ff3b00;
+            padding-left: 24px;
+            margin: 32px 0;
+        }
+
+        .hero-visual {
+            background: #111;
+            border: 4px solid #ff3b00;
+            padding: 48px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+            transform: rotate(2deg) skewX(-2deg);
+            min-height: 300px;
+            box-shadow: -12px 12px 0 #ff3b00;
+        }
+
+        .hero-visual .big-emoji {
+            font-size: 8rem;
+            filter: grayscale(1) brightness(1.5);
+        }
+
+        .hero-visual .stats {
+            display: flex;
+            gap: 32px;
+            font-size: 1.8rem;
+            color: #ff3b00;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: #ff3b00;
+            color: #000;
+            padding: 16px 48px;
+            font-size: 1.8rem;
+            font-family: Impact, sans-serif;
+            text-transform: uppercase;
+            border: 4px solid #fff;
+            box-shadow: 6px 6px 0 #fff;
+            transition: all 0.1s;
+            text-decoration: none;
+            margin-top: 24px;
+        }
+
+        .btn-primary:hover {
+            background: #000;
+            color: #ff3b00;
+            border-color: #ff3b00;
+            box-shadow: 6px 6px 0 #ff3b00;
+            transform: translate(-2px, -2px);
+        }
+
+        /* SECTION STYLES */
+        .section-title {
+            font-size: 3rem;
+            display: inline-block;
+            background: #ff3b00;
+            color: #000;
+            padding: 8px 32px;
+            transform: skewX(-10deg);
+            margin-bottom: 48px;
+        }
+
+        /* REVIEW CARDS (UGC) */
+        .review-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 48px;
+        }
+
+        .review-card {
+            background: #111;
+            border: 4px solid #fff;
+            padding: 32px;
+            position: relative;
+            transition: all 0.2s;
+        }
+
+        .review-card:hover {
+            border-color: #ff3b00;
+            transform: scale(1.02) rotate(-0.5deg);
+        }
+
+        .review-card .stars {
+            color: #ff3b00;
+            font-size: 1.8rem;
+            letter-spacing: 4px;
+            margin-bottom: 16px;
+        }
+
+        .review-card .nickname {
+            font-size: 1.6rem;
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .review-card .date {
+            font-family: 'Courier New', monospace;
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 16px;
+            text-transform: none;
+        }
+
+        .review-card .content {
+            font-family: 'Courier New', monospace;
+            color: #ccc;
+            text-transform: none;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        /* ASYMMETRIC BLOCK EXAMPLE */
+        .asymmetric-block {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 48px;
+            margin: 120px 0;
+            position: relative;
+        }
+
+        .asymmetric-block::before {
+            content: '💀';
+            position: absolute;
+            top: -60px;
+            right: -30px;
+            font-size: 5rem;
+            transform: rotate(15deg);
+            opacity: 0.5;
+        }
+
+        @media (max-width: 768px) {
+            .asymmetric-block {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .block-left {
+            border: 4px solid #ff3b00;
+            padding: 48px;
+            background: #0a0a0a;
+            transform: rotate(-1deg);
+        }
+
+        .block-right {
+            background: #ff3b00;
+            padding: 48px;
+            color: #000;
+            transform: rotate(2deg) translateY(24px);
+            border: 4px solid #fff;
+        }
+
+        .block-right p {
+            color: #000;
+            font-weight: 700;
+        }
+
+        /* CONTACT / CTA */
+        .contact-block {
+            background: #000;
+            border: 4px solid #ff3b00;
+            padding: 72px;
+            text-align: center;
+            margin: 120px 0;
+            position: relative;
+        }
+
+        .contact-block h2 {
+            border: none;
+            transform: none;
+            font-size: 4rem;
+            color: #ff3b00;
+        }
+
+        .contact-block .phone {
+            font-size: 4rem;
+            color: #fff;
+            letter-spacing: 0.1em;
+            display: block;
+            margin: 32px 0;
+            border: 4px solid #fff;
+            padding: 24px;
+            background: #111;
+        }
+
+        .contact-block .phone a {
+            color: #fff;
+            border: none;
+            font-size: inherit;
+        }
+
+        .contact-block .phone a:hover {
+            background: #ff3b00;
+            color: #000;
+        }
+
+        /* FOOTER */
+        footer {
+            border-top: 4px solid #ff3b00;
+            padding: 48px 72px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 24px;
+            background: #000;
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 32px 16px;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        footer p {
+            font-family: Impact, sans-serif;
+            text-transform: uppercase;
+            color: #666;
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        footer .copyright {
+            color: #444;
+            font-size: 0.8rem;
+        }
+
+        /* RESPONSIVE EXTRA */
+        @media (max-width: 768px) {
+            .brutal-border, .brutal-border-accent {
+                padding: 24px;
+            }
+
+            .contact-block {
+                padding: 32px 16px;
+            }
+
+            .contact-block .phone {
+                font-size: 2.5rem;
+            }
+
+            .btn-primary {
+                font-size: 1.4rem;
+                padding: 12px 32px;
+            }
+        }
+
+        /* OVERRIDE FOR PURE BRUTALISM */
+        ::selection {
+            background: #ff3b00;
+            color: #000;
+        }
+
+        /* RAW CSS TEXTURE */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(255,59,0,0.015) 2px, rgba(255,59,0,0.015) 4px);
+            pointer-events: none;
+            z-index: 9998;
+        }
+
+        /* NEGATIVE MARGIN TRICK */
+        .pull-up {
+            margin-top: -60px;
+        }
+
+        .pull-right {
+            margin-right: -72px;
+        }
+
+        @media (max-width: 768px) {
+            .pull-right {
+                margin-right: 0;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
+
+    <button class="nav-toggle" onclick="document.querySelector('nav').classList.toggle('active')" aria-label="메뉴">☰</button>
+
     <header>
-      <a href="/" class="brand">EDITORIAL.T3</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+        <div class="logo">BRO<span>ZONE</span></div>
+        <nav>
+            <a href="#hero">전장</a>
+            <a href="#reviews">후기</a>
+            <a href="#contact">연결</a>
+            <a href="tel:+821062790862">📞 전화</a>
+        </nav>
     </header>
+
     <main>
-      <div class="kicker">BOUTIQUE T3 / ACCENT HAIRLINES</div>
-      <h1>주식투자 리서치 및 기술 인프라 저널</h1>
-      <div class="story-body">
-        환영합니다. 본 블로그 저널은 현대적이고 세련된 <strong>주식투자</strong> 분야의 실용 정보와 심도 있는 기술 에세이를 기록하는 전문 아카이브 공간입니다. 아래의 엄선된 아티클 리스트를 통해 다양한 인사이트를 확인하시기 바랍니다.
-      </div>
-      
-      
-      <div class="editorials">
-        <div class="editorial-label">Recent Articles</div>
-        <div class="editorial-flow">
-          
-        <a href="posts/normal-1.html" class="editorial-block">
-          <h3>주식투자: 주식투자: 배당주 투자로 은퇴 연금 마련하기</h3>
-          <p>불확실성이 극대화되는 거시경제 파동 속에서 안정적이고 마르지 않는 고정 배당 수익을 가져다주는 우량 배당 귀족주 장기 투자는 직장인들에게 가장 든든한 금융 방패입니다. 배당 복리 ...</p>
-        </a>
-      
+        <!-- HERO -->
+        <section class="hero" id="hero">
+            <div class="hero-text">
+                <h1>강남 셔츠룸<br>마포 브로들</h1>
+                <p>주식으로 벌고, 셔츠룸으로 간다. <br>이게 우리의 법칙이다. 약자는 거르고, 실전만 남았다.</p>
+                <a href="tel:+821062790862" class="btn-primary">☎ 지금 전화</a>
+            </div>
+            <div class="hero-visual">
+                <div class="big-emoji">📈🔥</div>
+                <div class="stats">
+                    <span>+247%</span>
+                    <span>🔥 LIVE</span>
+                </div>
+                <p style="color:#fff; font-size:1.2rem; text-align:center; margin:0;">오늘의 수익률</p>
+            </div>
+        </section>
 
-        <a href="posts/normal-2.html" class="editorial-block">
-          <h3>주식투자: 주식투자: 코스트 에버리지 우량주 분할 매수</h3>
-          <p>시장 타이밍을 예측해 최저점에 주식을 매수하려는 헛된 시도보다는, 매월 일정한 시기에 정해진 금액만큼 대형 지수 추종 ETF나 우량 기업의 지분을 꾸준히 사 모으는 분할 매수 적립...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="editorial-block">
-          <h3>주식투자: 주식투자: 자산 배분 전략과 위험 분산</h3>
-          <p>완벽한 위험 통제를 달성하는 자산 배분의 핵심은 주식뿐만 아니라 안전한 실물 자산 및 대체 자산에 적정한 밸런스 비중을 유지하는 것입니다. 이는 일시적 하락 파동에서도 내 멘탈과 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="editorial-block">
-          <h3>주식투자 전문가들이 엄선한 강남 셔츠룸 상세 비법 가이드</h3>
-          <p>성공적인 주식투자를 위해 우량 기업의 재무제표와 분기 배당 성향을 꼼꼼하게 연구하다 보면, 리스크의 철저한 분산을 보장하는 것은 오직 변동 없는 오프라인 실물 경제의 든든한 고정 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="editorial-block">
-          <h3>주식투자 전문가들이 엄선한 강남 셔츠룸 상세 비법 가이드</h3>
-          <p>성공적인 주식투자를 위해 우량 기업의 재무제표와 분기 배당 성향을 꼼꼼하게 연구하다 보면, 리스크의 철저한 분산을 보장하는 것은 오직 변동 없는 오프라인 실물 경제의 든든한 고정 ...</p>
-        </a>
-      
+        <!-- INTRO ASYMMETRIC -->
+        <div class="container">
+            <div class="asymmetric-block">
+                <div class="block-left">
+                    <h2 style="color:#ff3b00; border-color:#fff; transform:skewX(-5deg);">주식은 전쟁이다</h2>
+                    <p style="color:#ccc;">마포에서 강남까지, 우리는 움직인다. 셔츠룸은 단순한 놀이터가 아니다. 계약이 성사되고, 정보가 오가고, 돈이 회전한다. 여긴 겉멋만으로 오는 곳이 아니다. 실적과 배짱, 그리고 연결. 이 삼박자가 맞아야 입장할 자격이 생긴다.</p>
+                    <p style="color:#ff3b00; font-size:1.5rem; margin-top:24px;">#주식고수 #셔츠룸 #마포브로</p>
+                </div>
+                <div class="block-right">
+                    <h2 style="color:#000; border-color:#000;">RULE NO.1</h2>
+                    <p style="font-weight:700;">손절은 없다. <br>전략만 있을 뿐.</p>
+                    <p style="font-weight:700;">010-6279-0862</p>
+                    <p style="font-weight:700;">지금 걸어라.</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      <div>&copy; 2026 EDITORIAL.T3. ALL RIGHTS RESERVED.</div>
+
+        <!-- REVIEWS UGC -->
+        <div class="container section" id="reviews">
+            <h2 class="section-title">💬 생생한 후기</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="nickname">서초동킹</div>
+                    <div class="date">2024-03-15</div>
+                    <div class="content">여기 형님들 수준이 다르다. 주식 얘기만 3시간. 셔츠룸 분위기도 미쳤고. 다음에도 올게요.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <div class="nickname">홍대입구</div>
+                    <div class="date">2024-03-10</div>
+                    <div class="content">처음 왔는데 완전 내 스타일. 정보도 빠르고 사람들도 직설적. 별 하나 뺀 건 술값이 좀 쎄서 ㅋㅋ 그래도 또 올 의향 200%</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="nickname">선릉야수</div>
+                    <div class="date">2024-02-28</div>
+                    <div class="content">여기서 만난 형 덕에 3주 만에 원금 회복함. 셔츠룸이 주식보다 더 뜨겁다. 인생은 타이밍.</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <div class="nickname">마포대장</div>
+                    <div class="date">2024-02-20</div>
+                    <div class="content">내 텃밭. 매주 금요일은 여기다. 주식 브로들 다 모여라. 전화번호는 외워둬라 010-6279-0862</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★☆</div>
+                    <div class="nickname">강남스타일</div>
+                    <div class="date">2024-02-14</div>
+                    <div class="content">발렌타인데이에 혼자 왔는데, 오히려 좋았다. 주식 얘기하며 밤 샘. 다음엔 팀원들 데리고 올게.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT / CTA -->
+        <div class="container">
+            <div class="contact-block" id="contact">
+                <h2>📞 지금 연결하라</h2>
+                <div class="phone">
+                    <a href="tel:+821062790862">010-6279-0862</a>
+                </div>
+                <p style="color:#fff; font-size:1.4rem; margin-top:24px;">주식 고수, 브로들, 셔츠룸 마스터. <br>이 라인은 진짜를 위한 라인이다.</p>
+                <div style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:32px;">
+                    <span style="background:#ff3b00; color:#000; padding:8px 24px; font-size:1.2rem;">#강남셔츠룸</span>
+                    <span style="background:#fff; color:#000; padding:8px 24px; font-size:1.2rem;">#마포주식</span>
+                    <span style="background:#ff3b00; color:#000; padding:8px 24px; font-size:1.2rem;">#브로커뮤니티</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- BONUS ASYMMETRIC SECTION -->
+        <div class="container section">
+            <div style="display:grid; grid-template-columns: 1fr 1.
+
+<!-- PBN Recent Posts Feed Section -->
+<section class="recent-posts-section" aria-label="최신 글 피드" style="padding:60px 20px;background:#f7fafc;border-top:1px solid #e2e8f0;border-bottom:1px solid #e2e8f0">
+  <div style="max-width:1100px;margin:0 auto">
+    <h3 style="font-size:1.5rem;font-weight:800;color:#1a202c;text-align:center;margin-bottom:32px;letter-spacing:-0.025em">📝 최신 관련 포스트</h3>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px">
+      
+    <article class="recent-post-card" style="background:#ffffff;border-radius:16px;padding:24px;box-shadow:0 4px 20px rgba(0,0,0,0.04);border:1px solid #edf2f7;transition:transform 0.3s ease,box-shadow 0.3s ease;display:flex;flex-direction:column;justify-content:space-between;min-height:220px" onmouseover="this.style.transform='translateY(-5px)';this.style.boxShadow='0 12px 24px rgba(0,0,0,0.08)'" onmouseout="this.style.transform='none';this.style.boxShadow='0 4px 20px rgba(0,0,0,0.04)'">
       <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;font-size:0.8rem;color:#718096">
+          <span>💡 GUIDE</span>
+          <time datetime="2026-06-10">2026-06-10</time>
+        </div>
+        <h4 style="font-size:1.1rem;font-weight:700;color:#1a202c;margin-bottom:8px;line-height:1.4">주식투자 해결 방법 총정리 — 전문가가 알려주는 5가지 팁</h4>
+        <p style="font-size:0.875rem;color:#4a5568;line-height:1.6;margin-bottom:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;text-overflow:ellipsis">### 테라포밍 마스의 비너스 확장이 게임 밸런스를 무너뜨리는 수치 분석 아, 진짜... 보드게임 업계에서 최근 테라포밍 마스의 비너스 확장을 던진 게임 개발사는 게임 밸런스가 완전히 무너졌습니다. 특히 특정 2인 전략 게임에서는 이 확장팩이 큰 충격을 줬어요. 그래서</p>
       </div>
-    </footer>
+      <a href="posts/guide-002-q5zjop.html" style="align-self:flex-start;text-decoration:none;color:#3182ce;font-size:0.9rem;font-weight:600;transition:color 0.2s" onmouseover="this.style.color='#2b6cb0'" onmouseout="this.style.color='#3182ce'">자세히 보기 →</a>
+    </article>
+    </div>
   </div>
+</section>
 </body>
 </html>

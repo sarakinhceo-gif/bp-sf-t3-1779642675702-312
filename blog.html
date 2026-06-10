@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 브로들의 주식 블로그 | 강남 셔츠룸 투자 전략</title>
+    <meta name="description" content="주식으로 돈 벌고 강남 셔츠룸에서 불태우는 마포 브로들의 리얼 투자 전략. 010-6279-0862. 지금 합류하라.">
+    <meta name="keywords" content="강남 셔츠룸, 마포 주식투자, 주식 고수, 브로 문화, 투자 커뮤니티, sf-t3, 블로그">
+    <link rel="canonical" href="https://sf-t3-1779642675702-312.vercel.app/blog">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <meta property="og:title" content="강남 셔츠룸 가는 진짜 주식 고수들의 블로그">
+    <meta property="og:description" content="마포에서 강남까지, 브로들의 주식투자 이야기. 셔츠룸에서 증권가 소문을 푼다.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-312.vercel.app/blog">
+    <style>
+        /* RESET & BASE */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            background-color: #0b0b0e;
+            background-image: radial-gradient(circle at 25% 0, #1a1a2e 0%, #0b0b0e 80%);
+            color: #e0e0e0;
+            font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.5;
+            padding: 0;
+            margin: 0;
+            min-height: 100vh;
+            border-left: 4px solid #f03c3c;
+        }
+        /* TYPOGRAPHY DNA */
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 800;
+            letter-spacing: -0.02em;
+            text-transform: uppercase;
+            color: #f0f0f0;
+        }
+        h1 {
+            font-size: 3.2rem;
+            line-height: 1;
+            margin-bottom: 0.75rem;
+            text-shadow: 6px 6px 0 #f03c3c;
+            border-left: 10px solid #f03c3c;
+            padding-left: 1rem;
+        }
+        h2 {
+            font-size: 2.4rem;
+            border-bottom: 4px solid #f03c3c;
+            display: inline-block;
+            padding-bottom: 0.25rem;
+            margin: 2rem 0 1.5rem;
+        }
+        h3 {
+            font-size: 1.8rem;
+            margin: 1.5rem 0 0.75rem;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.25rem;
+            color: #c8c8d0;
+        }
+        a {
+            color: #f03c3c;
+            text-decoration: underline wavy 2px;
+            font-weight: 600;
+            transition: 0.2s;
+        }
+        a:hover {
+            color: #f9f871;
+            text-decoration: underline overline;
+            background: #1f1f2e;
+        }
+        /* LAYOUT DNA: full bleed, asymmetric */
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 2rem 2rem 4rem;
+            position: relative;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem 1.2rem 3rem;
+            }
+            h1 {
+                font-size: 2.2rem;
+                border-left-width: 6px;
+                padding-left: 0.75rem;
+                text-shadow: 4px 4px 0 #f03c3c;
+            }
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+        .section {
+            margin-bottom: 3.5rem;
+            border-top: 2px dashed #2a2a3b;
+            padding-top: 2rem;
+        }
+        /* BRUTALIST NAV + HAMBURGER */
+        .nav-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background: #111118;
+            border-bottom: 4px solid #f03c3c;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            margin-bottom: 0.5rem;
+        }
+        .nav-logo {
+            font-weight: 900;
+            font-size: 1.8rem;
+            letter-spacing: -0.1rem;
+            color: #f03c3c;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 2px solid #f03c3c;
+            padding: 0.1rem 0.6rem;
+            background: #1a1a2a;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+            color: #d0d0d0;
+            letter-spacing: 0.08em;
+            border-bottom: 2px solid transparent;
+            padding-bottom: 0.25rem;
+        }
+        .nav-links a:hover {
+            color: #f9f871;
+            border-bottom-color: #f03c3c;
+        }
+        .tel-link {
+            background: #f03c3c;
+            color: #0b0b0e !important;
+            padding: 0.5rem 1.2rem !important;
+            font-weight: 800;
+            border-radius: 0;
+            text-decoration: none !important;
+            border: 2px solid #f03c3c;
+            transition: 0.15s;
+        }
+        .tel-link:hover {
+            background: #f9f871;
+            border-color: #f9f871;
+            color: #0b0b0e !important;
+        }
+        /* hamburger */
+        .hamburger-menu {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 6px;
+        }
+        .hamburger-menu span {
+            display: block;
+            width: 32px;
+            height: 4px;
+            background: #f03c3c;
+            border-radius: 0;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background: #13131c;
+                width: 100%;
+                padding: 1.5rem 2rem;
+                border-bottom: 6px solid #f03c3c;
+                gap: 1.5rem;
+                z-index: 999;
+                box-shadow: 0 12px 30px rgba(0,0,0,0.8);
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .hamburger-menu {
+                display: flex;
+            }
+            .nav-bar {
+                padding: 1rem 1.2rem;
+                flex-wrap: wrap;
+                position: relative;
+            }
+            .tel-link {
+                margin-left: auto;
+                margin-right: 0.5rem;
+                padding: 0.4rem 1rem;
+                font-size: 0.8rem;
+            }
+        }
+        /* 커스텀 블로그 카드/컴포넌트 */
+        .blog-card {
+            background: #14141e;
+            border: 2px solid #2a2a3e;
+            padding: 2rem 2rem 1.8rem;
+            margin: 2rem 0;
+            box-shadow: 12px 12px 0 #030303;
+            transition: 0.2s;
+        }
+        .blog-card:hover {
+            border-color: #f03c3c;
+            box-shadow: 8px 8px 0 #f03c3c;
+        }
+        .blog-card .meta {
+            font-size: 0.85rem;
+            color: #7a7a8a;
+            letter-spacing: 0.05em;
+            border-left: 4px solid #f03c3c;
+            padding-left: 0.8rem;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+        }
+        .blog-card h3 {
+            margin-top: 0;
+        }
+        .blog-card p {
+            font-size: 1rem;
+        }
+        .blog-card .readmore {
+            display: inline-block;
+            font-weight: 800;
+            background: #1f1f2e;
+            padding: 0.4rem 1.2rem;
+            border: 2px solid #f03c3c;
+            text-decoration: none;
+            color: #f03c3c;
+            margin-top: 0.5rem;
+        }
+        .blog-card .readmore:hover {
+            background: #f03c3c;
+            color: #0b0b0e;
+        }
+        .info-badge {
+            background: #1e1e2a;
+            padding: 0.5rem 1.2rem;
+            border-left: 8px solid #f03c3c;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 1.8rem;
+            text-transform: uppercase;
+        }
+        hr {
+            border: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #f03c3c, #2a2a3e, #f03c3c);
+            margin: 2rem 0;
+        }
+        footer {
+            border-top: 3px solid #2a2a3e;
+            padding: 2rem 0;
+            text-align: center;
+            color: #5a5a6a;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 네비게이션 (전체 공통) -->
+<nav class="nav-bar">
+    <a href="/" class="nav-logo">BRO's</a>
+    <button class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
+        <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="/">홈</a></li>
+        <li><a href="/blog">블로그</a></li>
+        <li><a href="/about">브로들</a></li>
+        <li><a href="/contact">입장</a></li>
+        <li><a href="tel:010-6279-0862" class="tel-link">010-6279-0862</a></li>
+    </ul>
+</nav>
+
+<main class="container">
+
+    <!-- 페이지 헤더 -->
+    <div style="margin-bottom: 1rem;">
+        <span class="info-badge">🔥 마포 본진 · 브로 전용 블로그</span>
+        <h1>강남 셔츠룸<br>주식 고수 칼럼</h1>
+        <p style="font-size:1.3rem; font-weight:600; max-width: 700px;">주식으로 셔츠를 찢고, 강남에서 목욕재계한다. 마포 브로들이 전하는 리얼 투자 전쟁기.</p>
+    </div>
+
+    <!-- 블로그 포스트 1편 (정보성 글) -->
+    <div class="section">
+        <h2>📈 오늘의 브리핑</h2>
+        <div class="blog-card">
+            <div class="meta">2025.04.14 · 마포구 서교동 · 작성자: 형팔</div>
+            <h3>“셔츠룸에서 종목 토론? 진짜 고수는 이미 움직였다”</h3>
+            <p>강남 셔츠룸, 거기는 그냥 노는 곳이 아니다. 가끔 형들끼리 맥주 한잔하면서 오더를 넣는데, 진짜 주식 고수들은 이미 그 테이블에서 물타기와 손절을 논한다. 나도 지난주에 강남 셔츠룸에서 들은 ‘바이오주 테마’로 3일 만에 12% 수익. 물론 운도 따르지만, 결정적 정보는 현장에서 나온다. 마포 브로들은 주식으로 돈 벌면 무조건 강남 셔츠룸부터 간다. 그게 룰이다.</p>
+            <p><strong>투자 포인트:</strong> 지금은 2차전지·반도체보다 <strong>셔츠룸 테마주</strong> (엔터·레저) 가 단기 펌핑 중. 셔츠룸에서 흘러나오는 소문은 이미 검증된 케이스가 많다. 다만 리스크 관리: 넌 절대 테이블에 있는 전부를 베팅하지 마라. 브로의 규칙은 ‘원칙’이다.</p>
+            <a href="#" class="readmore">🔥 전체 글 보기 (형만 믿어)</a>
+        </div>
+
+        <!-- 추가 정보성 요소: FAQ 스타일 질문/답변 (블로그 보조) -->
+        <div style="background: #0f0f18; border: 2px solid #2a2a3e; padding: 1.8rem; margin-top: 2rem;">
+            <h3 style="font-size:1.8rem; margin-bottom:1rem;">💬 브로들의 Q&A</h3>
+            <div style="margin-bottom: 1.2rem; border-left: 6px solid #f03c3c; padding-left: 1rem;">
+                <p style="font-weight:800; color:#f0f0f0;">Q. 강남 셔츠룸에서 주식 얘기해도 되나?</p>
+                <p>A. 당연하다. 거기는 브로들의 전장. 하지만 입조심은 기본. 너무 떠들면 형한테 한 방 먹을 수 있다. 적당히, 품위 있게. 그리고 전화번호는 010-6279-0862. 합류하고 싶으면 연락해라.</p>
+            </div>
+            <div style="border-left: 6px solid #f9f871; padding-left: 1rem;">
+                <p style="font-weight:800; color:#f0f0f0;">Q. 마포 주식투자 모임은 어떻게 참여하나?</p>
+                <p>A. 조건이 있다. 첫째, 최소 3천 이상 계좌 인증. 둘째, 강남 셔츠룸을 존중할 것. 셋째, 브로 정신. 자세한 건 전화로: <a href="tel:010-6279-0862" style="text-decoration:underline; background:transparent;">010-6279-0862</a> 로 문의. 너를 기다린다.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- 두 번째 블로그 스타일 포스트 (분량 조절, 정보성) -->
+        <div class="blog-card" style="margin-top: 1rem;">
+            <div class="meta">2025.04.10 · 홍대입구 · 작성자: 정우</div>
+            <h3>“주식으로 하루에 800만원? 셔츠룸에서 푼 썰”</h3>
+            <p>사실 나는 원래 강남 셔츠룸을 안 갔다. 그런데 마포 브로들이 ‘형, 주식 고수들은 거기서 논다’고 해서 반신반의하며 따라감. 그날 테이블에서 ‘조선주’ 떡상 얘기가 나왔고, 다음날 바로 매수. 장 마감 기준 7% 상승. 물론 항상 이렇게 되는 건 아니다. 하지만 중요한 건 <strong>정보의 흐름</strong> 이다. 강남 셔츠룸은 그 흐름이 모이는 곳. 마포에서 시작해 강남으로 가는 브로들의 네트워크는 진짜다.</p>
+            <p><strong>결론:</strong> 주식으로 돈 벌고 싶으면, 일단 브로들의 세계에 들어와라. 전화 한 통이면 모든 게 시작된다. <a href="tel:010-6279-0862" style="background:transparent;">010-6279-0862</a></p>
+            <a href="#" class="readmore">☎ 형한테 직통 전화</a>
+        </div>
+
+        <!-- 푸터 정보 (사이트 공통 분위기) -->
+        <footer>
+            <p>© 2025 마포 브로들 · 강남 셔츠룸 · 주식투자<br> 모든 투자의 책임은 본인에게. 브로 정신을 지켜라.</
+</body>
+</html>
